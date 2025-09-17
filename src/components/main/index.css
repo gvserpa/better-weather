@@ -1,0 +1,88 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 100px;
+    color: white;
+}
+
+.logo h1 {
+    color: white;
+}
+
+.temp {
+    width: 55vw;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.temp h2 {
+    font-size: 10rem;
+    color: white;
+    font-weight: 500;
+}
+
+.city h3 {
+    color: white;
+    font-size: 4rem;
+}
+
+.city p {
+    color: white;
+    text-align: center;
+}
+
+/* ===== Responsividade ===== */
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+    .main {
+        padding: 50px;
+    }
+
+    .temp {
+        width: 70vw;
+        gap: 30px;
+    }
+
+    .temp h2 {
+        font-size: 6rem;
+    }
+
+    .city h3 {
+        font-size: 2.5rem;
+    }
+
+    .city p {
+        font-size: 1rem;
+    }
+}
+
+/* Mobile (até 767px) */
+@media (max-width: 767px) {
+    .main {
+        padding: 30px 20px;
+        align-items: center;
+    }
+
+    .temp {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .temp h2 {
+        font-size: 4rem;
+    }
+
+    .city h3 {
+        font-size: 2rem;
+    }
+
+    .city p {
+        font-size: 0.9rem;
+    }
+}

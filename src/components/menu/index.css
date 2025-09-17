@@ -1,0 +1,172 @@
+/* ===== Estilos gerais ===== */
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 100vh;
+  width: 20vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 20px 0;
+}
+
+.menu-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 20px 20px 5px 20px;
+  gap: 10px;
+}
+
+.menu-search img {
+  border: none;
+}
+
+.menu-search input {
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+  color: white;
+}
+
+.menu-search input::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+.menu-search input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.menu-search button {
+  border: none;
+  background-color: transparent;
+}
+
+.menu-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+hr {
+  width: 70%;
+}
+
+.main-cities li {
+  cursor: pointer;
+}
+
+.main-cities,
+.weather-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.main-cities ul,
+.weather-details h3,
+.cloudy {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  list-style: none;
+  color: rgba(249, 254, 255, 0.521);
+  gap: 20px;
+}
+
+.cloudy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  gap: 20px;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 1024px) {
+  .menu {
+    width: 70vw;
+    border-radius: 10px;
+  }
+
+  .main-cities ul,
+  .weather-details h3,
+  .cloudy {
+    width: 60%;
+  }
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+  header {
+    justify-content: center;
+  }
+
+  .menu {
+    border-radius: 10px;
+    width: 70vw;
+    height: auto;
+    padding: 15px 35px;
+  }
+
+  .menu-search {
+    gap: 10px;
+  }
+
+  .menu-search input {
+    width: 100%;
+  }
+
+  .main-cities ul,
+  .weather-details h3,
+  .cloudy {
+    width: 70%;
+  }
+
+  .cloudy {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .menu {
+    width: 90vw;
+    gap: 15px;
+  }
+
+  .menu-search {
+    width: 90%;
+  }
+
+  .menu-search input {
+    font-size: 14px;
+  }
+
+  .main-cities ul,
+  .weather-details h3,
+  .cloudy {
+    width: 90%;
+  }
+
+  .cloudy {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  hr {
+    width: 90%;
+  }
+}
