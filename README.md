@@ -1,12 +1,86 @@
-# React + Vite
+# Better Weather
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Better Weather is a **React-based weather application** built with Vite and Axios.  
+It allows users to search for current weather information for any city, and automatically updates the background image according to the weather condition.
 
-Currently, two official plugins are available:
+This project was created to practice **React, state management, API consumption, and responsive design**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🌐 Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+You can try the application here:
+
+👉 [https://better-weather-ruddy.vercel.app/](https://better-weather-ruddy.vercel.app/)
+
+---
+
+## 🚀 Features
+
+- Search for weather by city
+- Display temperature, feels like, humidity, wind, and min/max temperatures
+- Dynamic background images according to weather conditions (Clear, Clouds, Rain, Snow, Thunderstorm)
+- Responsive layout for desktop, tablet, and mobile
+- Predefined main cities for quick access
+
+---
+
+## 💻 Technologies
+
+- **React** (Functional components + Hooks)
+- **Vite** (Build tool)
+- **Axios** (API requests)
+- **CSS3** (Flexbox, responsive design, backdrop blur)
+- **OpenWeather API** (Weather data)
+
+---
+
+## ⚙️ Getting Started
+
+1. Clone the repository:
+
+```
+git clone https://github.com/gvserpa/better-weather.git
+```
+
+2. Navigate to the project folder:
+   
+```
+cd better-weather
+```
+
+3. Install dependencies:
+
+```
+npm install
+```
+
+```
+
+4. Create a .env file in the root directory with your OpenWeather API key:
+
+```
+VITE_OPENWEATHER_API_KEY=your_api_key_here
+```
+
+5. Run the development server:
+
+```
+npm run dev
+```
+
+6. Open your browser at http://localhost:5173
+
+###
+
+⚡ Notes
+
+The application is fully responsive and adapts to desktop, tablet, and mobile screen sizes.
+
+Make sure to keep your API key safe; it is stored in .env and should not be committed to GitHub.
+
+###
+
+📌 License
+
+This project is for learning purposes and does not have a commercial license.
